@@ -3,7 +3,6 @@ using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Threading.Tasks;
-using Terrasoft.Core;
 using Terrasoft.Web.Common;
 
 namespace ExchangeRates
@@ -12,13 +11,6 @@ namespace ExchangeRates
 	[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
 	public class ExchangeRate_WS: BaseService
 	{
-		[OperationContract]
-		[WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped,
-			RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-		public string ExecutePost(string script) {
-			return UserConnection.CurrentUser.Name;
-		}
-
 		[OperationContract]
 		[WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json,
 			BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
@@ -37,7 +29,6 @@ namespace ExchangeRates
                 BankName = bankResult.BankName
             };
             return result;
-            //return bankResult;
 		}
 	}
 }

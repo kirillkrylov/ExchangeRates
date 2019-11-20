@@ -1,5 +1,5 @@
-# Exchange Rates  [![Logo](https://www.creatio.com/sites/default/files/2019-10/creatio-main-logo.svg)](https://github.com/sindresorhus/awesome#readme)
-
+[![Logo](https://www.creatio.com/sites/default/files/2019-10/creatio-main-logo.svg)](https://github.com/sindresorhus/awesome#readme)
+# Exchange Rates  
 This project adds necessary classes to obtain curent and historic Exchange Rates from 
 - European Central Bank
 - Bank of Canada

@@ -7,7 +7,7 @@ This project adds necessary classes to obtain curent and historic Exchange Rates
 - National Bank of Ukraine
 
 ## Usage
-```
+```C#
 public BankResult ExecuteGet(int bankId, string date, string currency) {
     DateTime.TryParse(date, out DateTime dt);
     IBank bank = BankFactory.GetBank((BankFactory.SupportedBanks)bankId);

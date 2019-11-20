@@ -28,13 +28,14 @@ namespace ExchangeRates
 		[OperationContract]
 		[WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json,
 		BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
-		public BankResult ExecuteGet(int bankId, string date, string currency){
-            
+		public BankResult ExecuteGet(int bankId, string date, string currency)
+		{
 			DateTime.TryParse(date, out DateTime dt);
 			IBank bank = BankFactory.GetBank((BankFactory.SupportedBanks)bankId);
 
 			IBankResult bankResult = Task.Run(() => bank.GetRateAsync(currency.ToUpper(), dt)).Result;
-			BankResult result = new BankResult{
+			BankResult result = new BankResult
+			{
 				ExchangeRate = bankResult.ExchangeRate,
 				RateDate = bankResult.RateDate,
 				HomeCurrency = bankResult.HomeCurrency,

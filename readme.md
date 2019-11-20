@@ -43,7 +43,7 @@ namespace ExchangeRates
             };
 			return result;
 		}
-		}
+	}
 }
 ```
 

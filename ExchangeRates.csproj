@@ -33,10 +33,14 @@
     <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Quartz, Version=3.0.9.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
       <HintPath>packages\BpmonlineSDK.7.15.0.634\lib\net40\Quartz.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Activation" />
     <Reference Include="System.ServiceModel.Web" />
@@ -128,7 +132,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Compile Include="Files\cs\*.cs" />
+    <Compile Include="Files\ConnectedServices\CbrDailyInfo.cs" />
+    <Compile Include="Files\cs\BankFactory.cs" />
+    <Compile Include="Files\cs\BankOfCanada.cs" />
+    <Compile Include="Files\cs\BankResult.cs" />
+    <Compile Include="Files\cs\CentralBankOfRussia.cs" />
+    <Compile Include="Files\cs\EuropeanCentralBank.cs" />
+    <Compile Include="Files\cs\ExchangeRate_WS.cs" />
+    <Compile Include="Files\cs\IBank.cs" />
+    <Compile Include="Files\cs\NationalBankOfUkraine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <!-- ##BpmonlineSDKMarker## -->
@@ -143,7 +155,9 @@
   <!-- ##BpmonlineSDKMarker## -->
   <ItemGroup>
     <None Include="descriptor.json" />
+    <None Include="ExchangeRates.yml" />
     <None Include="packages.config" />
+    <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />

@@ -6,6 +6,22 @@ This project adds necessary classes to obtain curent and historic Exchange Rates
 - Central Bank of the Russian Federation
 - National Bank of Ukraine
 
+## Usage
+'''
+DateTime.TryParse(date, out DateTime dt);
+IBank bank = BankFactory.GetBank((BankFactory.SupportedBanks)bankId);
+
+IBankResult bankResult = Task.Run(() => bank.GetRateAsync(currency.ToUpper(), dt)).Result;
+BankResult result = new BankResult
+{
+	ExchangeRate = bankResult.ExchangeRate,
+	RateDate = bankResult.RateDate,
+	HomeCurrency = bankResult.HomeCurrency,
+	BankName = bankResult.BankName
+};
+return result;
+'''
+
 
 ## Tools
 - [Clio](https://github.com/Advance-Technologies-Foundation/clio) - CLI Library to create packages.

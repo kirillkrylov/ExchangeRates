@@ -32,3 +32,5 @@ C:\Pkgs\ExchangeRates\obj\Debug\ExchangeRates.csprojAssemblyReference.cache
 C:\Pkgs\ExchangeRates\obj\Debug\ExchangeRates.csproj.CopyComplete
 C:\Pkgs\ExchangeRates\obj\Debug\ExchangeRates.dll
 C:\Pkgs\ExchangeRates\obj\Debug\ExchangeRates.pdb
+C:\Pkgs\ExchangeRates\Files\Bin\Newtonsoft.Json.dll
+C:\Pkgs\ExchangeRates\Files\Bin\Newtonsoft.Json.xml

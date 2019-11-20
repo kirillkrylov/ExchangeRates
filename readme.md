@@ -1,7 +1,6 @@
 # Exchange Rates  [![Logo](https://www.creatio.com/sites/default/files/2019-10/creatio-main-logo.svg)](https://github.com/sindresorhus/awesome#readme)
-> A curated list of awesome READMEs
 
-Elements in beautiful READMEs include, but are not limited to: images, screenshots, GIFs, text formatting, etc.
+This project adds Exchange Rates from Bank of Canada, Bank of Russia, EU Bank
 
 
 ## Tools
@@ -10,3 +9,4 @@ Elements in beautiful READMEs include, but are not limited to: images, screensho
 
 ## Documentation
 - [Creatio Documentation](https://academy.creatio.com/documents/technic-sdk/7-15/creatio-development-guide) - Creatio Development Guide
+- [Bank of Canada](https://www.bankofcanada.ca/valet/docs) - Bank of Canada Valet API Documentation

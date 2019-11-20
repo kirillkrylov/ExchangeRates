@@ -13,11 +13,14 @@ Use clio (formely known as bpmcli) to install this project
 clio reg-web-app EnvironmentName -u https://domain.creatio.com -l Supervisor -p Supervisor -m YourCompanyName
 ```
 #### Step 2 - Install Package with cli tool
-Make sure your prompt is on the same level as the Package directory.
+Make sure you are in the same directory as the package root folder.
 ```text
 clio push-pkg ExchangeRates -e EnvironmentName
 ```
 <img src="img/commandLine1.png">
+
+If everythig went well you will see a similar result
+<img src="img/commandLine2.png">
 
 ## Usage
 - Get Rates from Bank of Canada

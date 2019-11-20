@@ -1,6 +1,6 @@
 [![Logo](https://www.creatio.com/sites/default/files/2019-10/creatio-main-logo.svg)](https://github.com/sindresorhus/awesome#readme)
 # Exchange Rates  
-This project adds necessary classes to obtain curent and historic Exchange Rates from 
+This project adds necessary classes to obtain curent and historic Exchange Rates from the following banks
 - European Central Bank
 - Bank of Canada
 - Central Bank of the Russian Federation
@@ -12,7 +12,8 @@ Use clio (formely known as bpmcli) to install this project
 ```text
 clio reg-web-app EnvironmentName -u https://domain.creatio.com -l Supervisor -p Supervisor -m YourCompanyName
 ```
-#### Step 2 - Install Package
+#### Step 2 - Install Package with cli tool
+Make sure your prompt is on the same level as the Package directory.
 ```text
 clio push-pkg ExchangeRates -e EnvironmentName
 ```

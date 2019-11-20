@@ -8,18 +8,20 @@ This project adds necessary classes to obtain curent and historic Exchange Rates
 
 ## Usage
 ```
-DateTime.TryParse(date, out DateTime dt);
-IBank bank = BankFactory.GetBank((BankFactory.SupportedBanks)bankId);
+		public BankResult ExecuteGet(int bankId, string date, string currency) {
+            DateTime.TryParse(date, out DateTime dt);
+            IBank bank = BankFactory.GetBank((BankFactory.SupportedBanks)bankId);
 
-IBankResult bankResult = Task.Run(() => bank.GetRateAsync(currency.ToUpper(), dt)).Result;
-BankResult result = new BankResult
-{
-	ExchangeRate = bankResult.ExchangeRate,
-	RateDate = bankResult.RateDate,
-	HomeCurrency = bankResult.HomeCurrency,
-	BankName = bankResult.BankName
-};
-return result;
+            IBankResult bankResult = Task.Run(() => bank.GetRateAsync(currency.ToUpper(), dt)).Result;
+            BankResult result = new BankResult
+            {
+                ExchangeRate = bankResult.ExchangeRate,
+                RateDate = bankResult.RateDate,
+                HomeCurrency = bankResult.HomeCurrency,
+                BankName = bankResult.BankName
+            };
+            return result;
+		}
 ```
 
 

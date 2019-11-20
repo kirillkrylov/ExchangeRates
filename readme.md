@@ -7,7 +7,7 @@ This project adds necessary classes to obtain curent and historic Exchange Rates
 - National Bank of Ukraine
 
 ## Usage
-'''
+```
 DateTime.TryParse(date, out DateTime dt);
 IBank bank = BankFactory.GetBank((BankFactory.SupportedBanks)bankId);
 
@@ -20,7 +20,7 @@ BankResult result = new BankResult
 	BankName = bankResult.BankName
 };
 return result;
-'''
+```
 
 
 ## Tools

@@ -1,6 +1,6 @@
 # Exchange Rates  [![Logo](https://www.creatio.com/sites/default/files/2019-10/creatio-main-logo.svg)](https://github.com/sindresorhus/awesome#readme)
 
-This project adds Exchange Rates from Bank of Canada, Bank of Russia, EU Bank
+This project adds necessary classes to obtain curent and historic Exchange Rates [ECB], [BOC]
 
 
 ## Tools

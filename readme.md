@@ -23,20 +23,23 @@ If everythig went well you will see a similar result
 <img src="img/commandLine2.png">
 
 #### Verify Istallation
-Try going to the following url, it will return USD/CAD exchange rate for Nov 20, 2019 from the Bank of Canada
+Try going to the following url from the browser that is already authenticated
+It will return USD/CAD exchange rate for Nov 20, 2019 from the Bank of Canada
  ```text
  http://domain.creatio.com/0/rest/ExchangeRate_WS/ExecuteGet?bankId=0&date=2019-11-20&currency=USD
  ```
  <img src="img/getResultUrlpng.png">
 
 
-
-
 ## Usage
-- Get Rates from Bank of Canada
- ```text
- http://domain.creatio.com/0/rest/ExchangeRate_WS/ExecuteGet?bankId=0&date=2019-11-20&currency=USD
- ```
+Every bank implements IBank interface that is returned from the factory method BankFactory.GetBank(BankFactory.SupportedBanks) 
+IBank declares GetRateAsync method that returns IBankResult.
+Some banks do not return Fx Rates for the current day, thus GetRateAsync will get the latest known rate.
+For instance, Bank of Canada will not return rates for non-banking days, thus GetRateAsync will recursively ask 
+for the previous day until there is a result
+
+
+
 ```C#
 using System;
 using System.ServiceModel;

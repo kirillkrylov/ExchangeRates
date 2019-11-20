@@ -7,6 +7,8 @@ This project adds necessary classes to obtain curent and historic Exchange Rates
 - National Bank of Ukraine
 
 ## Usage
+- Get Rates from Bank of Canada
+- http://k_krylov_nb:8060/0/rest/ExchangeRate_WS/ExecuteGet?bankId=0&date=2019-11-20&currency=USD
 ```C#
 public BankResult ExecuteGet(int bankId, string date, string currency) {
     DateTime.TryParse(date, out DateTime dt);

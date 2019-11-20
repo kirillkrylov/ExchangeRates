@@ -1,0 +1,10 @@
+{
+  "Descriptor": {
+    "UId": "cf045b69-9294-4415-b1cf-379cf92807c4",
+    "PackageVersion": "7.8.0",
+    "Name": "ExchangeRates",
+    "ModifiedOnUtc": "/Date(1574245037000)/",
+    "Maintainer": "Kirll",
+    "DependsOn": []
+  }
+}

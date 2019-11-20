@@ -1,6 +1,10 @@
 # Exchange Rates  [![Logo](https://www.creatio.com/sites/default/files/2019-10/creatio-main-logo.svg)](https://github.com/sindresorhus/awesome#readme)
 
-This project adds necessary classes to obtain curent and historic Exchange Rates [ECB], [BOC]
+This project adds necessary classes to obtain curent and historic Exchange Rates from 
+- European Central Bank
+- Bank of Canada
+- Central Bank of the Russian Federation
+- National Bank of Ukraine
 
 
 ## Tools

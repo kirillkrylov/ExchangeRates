@@ -8,11 +8,11 @@ This project adds necessary classes to obtain curent and historic Exchange Rates
 
 ## Installation
 Use clio (formely known as bpmcli) to install this project
-1. Add Environment to cli
+#### Step 1 - Add Environment to cli
 ```text
 clio reg-web-app EnvironmentName -u https://domain.creatio.com -l Supervisor -p Supervisor -m YourCompanyName
 ```
-2. Install Package
+#### Step 2 - Install Package
 ```text
 clio push-pkg ExchangeRates -e EnvironmentName
 ```

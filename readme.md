@@ -12,7 +12,7 @@ Use clio (formely known as bpmcli) to install this project
 ```text
 clio reg-web-app EnvironmentName -u https://domain.creatio.com -l Supervisor -p Supervisor -m YourCompanyName
 ```
-Install Package
+2. Install Package
 ```text
 clio push-pkg ExchangeRates -e EnvironmentName
 ```

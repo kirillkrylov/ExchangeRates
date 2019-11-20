@@ -37,8 +37,8 @@ Every bank implements IBank interface that is returned from the factory method B
 IBank declares GetRateAsync method that returns IBankResult.</p>
 <p>
 Some banks do not return Fx Rates for the current day, thus GetRateAsync will get the latest known rate.
-For instance, Bank of Canada will not return rates for non-banking days, thus GetRateAsync will recursively ask 
-for the previous day until there is a result
+For instance, Bank of Canada will not return rates for non-banking days, GetRateAsync will recursively ask 
+for the previous day until there is a result.
 </p>
 
 

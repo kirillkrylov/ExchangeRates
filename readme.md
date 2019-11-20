@@ -6,6 +6,17 @@ This project adds necessary classes to obtain curent and historic Exchange Rates
 - Central Bank of the Russian Federation
 - National Bank of Ukraine
 
+## Installation
+Use clio (formely known as bpmcli) to install this project
+1. Add Environment to cli
+```text
+clio reg-web-app EnvironmentName -u https://domain.creatio.com -l Supervisor -p Supervisor -m YourCompanyName
+```
+Install Package
+```text
+clio push-pkg ExchangeRates -e EnvironmentName
+```
+
 ## Usage
 - Get Rates from Bank of Canada
  ```text

@@ -6,7 +6,7 @@ Elements in beautiful READMEs include, but are not limited to: images, screensho
 
 ## Tools
 - [Clio](https://github.com/Advance-Technologies-Foundation/clio) - CLI Library to create packages.
-- [Clio](https://github.com/Advance-Technologies-Foundation/clio) - CLI Library to create packages.
+- [Bpmonline.SDK](https://www.nuget.org/packages/BpmonlineSDK/) - Provides project template for development code for bpm'online platform.
 
 ## Documentation
-- [Academy](https://academy.creatio.com/documents/technic-sdk/7-15/creatio-development-guide) - Creatio Development Guide
+- [Creatio Documentation](https://academy.creatio.com/documents/technic-sdk/7-15/creatio-development-guide) - Creatio Development Guide

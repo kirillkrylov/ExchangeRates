@@ -22,6 +22,16 @@ clio push-pkg ExchangeRates -e EnvironmentName
 If everythig went well you will see a similar result
 <img src="img/commandLine2.png">
 
+#### Verify Istallation
+Try going to the following url, it will return USD/CAD exchange rate for Nov 20, 2019 from the Bank of Canada
+ ```text
+ http://domain.creatio.com/0/rest/ExchangeRate_WS/ExecuteGet?bankId=0&date=2019-11-20&currency=USD
+ ```
+ <img src="img/getResultUrlpng.png">
+
+
+
+
 ## Usage
 - Get Rates from Bank of Canada
  ```text

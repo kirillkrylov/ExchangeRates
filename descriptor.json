@@ -4,7 +4,14 @@
     "PackageVersion": "7.8.0",
     "Name": "ExchangeRates",
     "ModifiedOnUtc": "/Date(1574245037000)/",
-    "Maintainer": "Kirll",
-    "DependsOn": []
+    "Maintainer": "Kirll Krylov",
+    "Description": "https://github.com/kirillkrylov/ExchangeRates/blob/master/readme.md",
+    "DependsOn": [
+      {
+        "UId": "2fabaf6c-0f92-4530-aef8-40345c021da2",
+        "PackageVersion": "7.8.0",
+        "Name": "ProductCore"
+      }
+    ]
   }
 }

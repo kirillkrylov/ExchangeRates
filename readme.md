@@ -17,6 +17,7 @@ Make sure your prompt is on the same level as the Package directory.
 ```text
 clio push-pkg ExchangeRates -e EnvironmentName
 ```
+<img src="img/commandLine1.png">
 
 ## Usage
 - Get Rates from Bank of Canada
